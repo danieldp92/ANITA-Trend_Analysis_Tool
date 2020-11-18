@@ -1,0 +1,1422 @@
+<html><head>
+<!-- css for structure -->
+<link rel="stylesheet" href="fredthebaker_2_files/formee-structure.css" type="text/css" media="screen">
+		
+<!-- css for style -->
+<link rel="stylesheet" href="fredthebaker_2_files/formee-style.css" type="text/css" media="screen">
+	<meta content="text/html; charset=UTF-8" http-equiv="Content-type">
+    <title> fredthebaker | Drugmarket </title>
+	<style>
+
+ .flashdata{width:700px; margin:0em auto;}
+
+ .errormsg{border: 1px solid #ED154B; background-color: B8697C;}
+
+ .container_clear{width:500px;}
+
+ .container_clear_list li{ display:inline;
+    list-style: none;}
+
+ .container_clear_list{ position:relative;
+    }
+.funds{padding-right:8px;}
+ .funds-box{padding:8px; border: 1px solid #078FB5;}
+  .container_clear_list a{ color:#078FB5; padding:5px;}
+
+ .btn{padding:12px; font-size:15px;}
+.viewusercont{width: 810px; margin-top:10px;}
+ .table-form input{
+    width:50px;
+    float: right;
+    text-align: right;
+}
+
+.table-form select {
+  font-size: 14px !important;
+  height: 30px;
+  padding: 4px;
+  width: 8em;
+}
+
+ #id_bitcoinaddress{width:100% !important;}
+
+ #id_receipient{width:100% !important;}
+
+ #id_pin{
+    width: 300px;
+    vertical-align: 0;
+ }
+
+ .account input{ margin-top:10px;
+        margin-bottom:10px;}
+
+
+table{
+  width:100%;
+}
+
+ .text_new {
+    width: 200px !important;
+    vertical-align: 0 !important;
+}
+
+  .buyers-table th tr {font-weight:normal;border:1px solid #078FB5;  border:0;}
+
+  .buyers-table th { text-align:left; font-weight:bold; padding-bottom: 4px; border: 0 important!; }
+
+
+ .container_clear { padding:10px;
+    }
+ .container_clear_list {
+  padding: 0;
+}
+ .amount{padding-right:15px;}
+
+ .blue_bg{background-color:#078FB5;border: 1px solid #078FB5;}
+
+  .account{ margin-top:20px;
+        }
+
+  .blue{color:#078FB5;}
+
+  .address span{ font-weight:bold;}
+   .address { font-weight:normal;font-size:13px;}
+
+
+  .address{margin-top:30px;}
+
+  .footnote{font-size:13px;color:#545354;}
+
+.css_btn_class {
+	font-size:10px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	border:1px solid #337fed;
+	padding:2px 3px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #3d94f6 5%, #1e62d0 100% );
+	background:-ms-linear-gradient( top, #3d94f6 5%, #1e62d0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3d94f6', endColorstr='#1e62d0');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #3d94f6), color-stop(100%, #1e62d0) );
+	background-color:#3d94f6;
+	color:#ffffff;
+	display:inline-block;
+	text-shadow:1px 1px 0px #1570cd;
+ 	-webkit-box-shadow:inset 1px 1px 0px 0px #97c4fe;
+ 	-moz-box-shadow:inset 1px 1px 0px 0px #97c4fe;
+ 	box-shadow:inset 1px 1px 0px 0px #97c4fe;
+}.css_btn_class:hover {
+	background:-moz-linear-gradient( center top, #1e62d0 5%, #3d94f6 100% );
+	background:-ms-linear-gradient( top, #1e62d0 5%, #3d94f6 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#1e62d0', endColorstr='#3d94f6');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(5%, #1e62d0), color-stop(100%, #3d94f6) );
+	background-color:#1e62d0;
+}.css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+
+ .css_btn {
+    height: 30px !important;
+    width: 30px !important;
+	font-size:10px !important;
+    padding: 0 !important;
+}
+
+.prod_info2{font-size:12px; margin-top:15px;}
+
+.placeholder{width:230px; height:135px;}
+.producttable {width:350px !important;
+                margin-left:5px !important;}
+
+.msgtable {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 2px 2px 5px #888888;
+	border:1px solid #000000;
+
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}.msgtable table{
+    border-collapse: collapse;
+    border-spacing: 0;
+	width:100%;
+	margin:0px;padding:0px;
+}.msgtable tr:last-child td:last-child {
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-bottom-right-radius:0px;
+	border-bottom-right-radius:0px;
+}
+.msgtable table tr:first-child td:first-child {
+	-moz-border-radius-topleft:0px;
+	-webkit-border-top-left-radius:0px;
+	border-top-left-radius:0px;
+}
+
+
+th {
+    padding: 4px;
+    text-align: left;
+}
+
+.msgtable table tr:first-child td:last-child {
+	-moz-border-radius-topright:0px;
+	-webkit-border-top-right-radius:0px;
+	border-top-right-radius:0px;
+}.msgtable tr:last-child td:first-child{
+	-moz-border-radius-bottomleft:0px;
+	-webkit-border-bottom-left-radius:0px;
+	border-bottom-left-radius:0px;
+}.msgtable tr:hover td{
+
+}
+.msgtable tr:nth-child(odd){ background-color:#aad4ff; }
+.msgtable tr:nth-child(even)    { background-color:#ffffff; }.msgtable td{
+
+
+	border:1px solid #000000;
+	border-width:0;
+	text-align:left;
+	padding:4px;
+	font-size:10px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}.msgtable tr:last-child td{
+	border-width:0px 0px 0px 0px;
+}.msgtable tr td:last-child{
+	border-width:0px 0px 0px 0px;
+}.msgtable tr:last-child td:last-child{
+	border-width:0px 0px 0px 0px;
+}
+.msgtable tr:first-child td{
+		background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+
+	background-color:#005fbf;
+	border:0px solid #000000;
+	text-align:center;
+	border-width:0px 0px 1px 1px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:bold;
+	color:#ffffff;
+}
+.msgtable tr:first-child:hover td{
+	background:-o-linear-gradient(bottom, #005fbf 5%, #003f7f 100%);	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #005fbf), color-stop(1, #003f7f) );
+	background:-moz-linear-gradient( center top, #005fbf 5%, #003f7f 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#005fbf", endColorstr="#003f7f");	background: -o-linear-gradient(top,#005fbf,003f7f);
+
+	background-color:#005fbf;
+}
+.msgtable tr:first-child td:first-child{
+	border-width:0px 0px 1px 0px;
+}
+.msgtable tr:first-child td:last-child{
+	border-width:0px 0px 1px 1px;
+}
+
+.messagewrapper{
+    margin-top: 5px;
+ }
+ body {font-family: Helvetica, Arial, sans-serif; color: #545354;}
+ a {
+     font-family: Helvetica, Arial, sans-serif;
+    color:#078FB5;
+	text-decoration: none;
+ }
+
+.settings input{margin-top:10px;}
+
+.settings-cont{width:704px;
+        margin-top:20px;}
+
+.category-form{
+        margin-top:8px;
+        width:200px;
+        float:right;
+        }
+
+.category-form p{
+        position: relative;
+        top: -4px;
+        }
+
+.category-form-button{
+        float:right;
+        }
+	.filter{
+font-size: 12px;
+        text-align:right;
+}
+
+	.fix{
+height:5px;
+}
+
+	.fix4{
+height:98px;
+}
+
+	.fix3{
+    height:auto;
+    padding-top:15px;
+    position: relative;
+}
+
+	.fix1{
+    height: auto;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+
+	.top-nav-button{
+    position: relative;
+    right: 34px;
+}
+
+
+  ul#Navigation li {
+    font: normal 100.01% Helvetica, Arial, sans-serif;
+    color: #545354;
+	text-decoration: none;
+    list-style: none;
+    display: inline;
+  }
+
+ ul#root {
+    margin-top: -60;
+    padding-left: 40;
+ }
+
+    ul#root li {
+      font: normal 100.01% Helvetica, Arial, sans-serif;
+    color: black;
+	text-decoration: none;
+    list-style: none;
+  }
+
+
+    .seller li {
+    font: normal 100.01% Helvetica, Arial, sans-serif;
+    color: black;
+	text-decoration: none;
+    list-style: none;
+  }
+
+  ul#root a, ul#root span {
+    text-decoration: none; 
+	color:#078FB5;
+  }
+    ul#Navigation a, ul#Navigation span {
+    text-decoration: none; font-weight: bold;
+	color:#078FB5;
+  }
+  
+  ul#Navigation span {
+		font-weight: bold;
+  }
+  
+    #Navigation  {
+    height:15px;
+  }
+ ul#Navigation {
+    padding-left: 0;
+ }
+
+.prod_item  {
+    border: 1px solid #E0E0E0;
+    float: left;
+    margin-right: 10px;
+    margin-top: 8px;
+    padding: 7px;
+    width: 180px;
+  }
+
+.prod_item  img{
+
+  }
+
+.msgaction{
+
+ }
+
+.prod_item a {
+      font: normal 100.01% Helvetica, Arial, sans-serif;
+	color:#078FB5;
+	text-decoration: none;
+    list-style: none;
+  }
+
+.news {
+      border-top: solid 1px #3687a9;
+      margin-top: 10px;
+      font: 15px Helvetica, Arial, sans-serif;
+      color:#078FB5;
+        }
+
+.paginator{
+    width: 700px;
+    float: left;
+    text-align: right;
+}
+.price_big{float:left; font: 10px Arial,Sans-Serif;}
+
+.price_big_inner{     font-size: 28px;
+    font-weight: bold;}
+
+
+.announcement{padding-bottom:20px;}
+
+
+.inner_form{    float: left;
+    margin-left: 25px;
+    width: 400px;}
+.news h3{
+      font: bold 17px Helvetica, Arial, sans-serif;
+        }
+
+.green{
+      color:#6FDB09;
+        }
+.orange{
+      color:#F29F05;
+        }
+
+.content{
+      margin-left: 0 !important;
+        }
+
+.main-box{
+        height:600px;}
+
+.pagination{float:left;
+        margin-top:15px;
+              font: normal 100.01% Helvetica, Arial, sans-serif;
+	color:#078FB5;}
+.cat-item{
+    font-family: Helvetica, Arial, sans-serif;
+    border: 1px solid #C0C0C0;
+    height: 285px;
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 180px;
+    float:left;
+    margin-right:5px;
+    margin-top:5px;}
+
+.price-big{
+      font-family: Helvetica, Arial, sans-serif;
+      color:#078FB5;
+      font-weight: bold;
+      font-size: 14px;
+        }
+.price-big a{ float:right;
+            font-size:12px;
+        }
+
+.ships{
+    float: left;
+    width: 40px;}
+
+.sells{
+    float: left;
+    width: 80px;}
+
+.add_to_cart {
+      font-family: Helvetica, Arial, sans-serif;
+            font-size: 13px;
+    font-weight: bold;
+    left: 111px;
+    position: relative;}
+
+.content.grid-8-12 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.fix4.grid-12-12 {
+    margin: 0;
+    padding: 0 0 10px 0;
+}
+
+.main-box.grid-12-12 {
+    padding: 0;
+}
+
+.top-nav.fix3.grid-7-12 {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+.fix.grid-3-12 {
+  margin-right:  0;
+}
+
+.img_wrapper { border: 1px solid #000000;
+    float: left;
+    padding: 5px;
+    height: 135px;
+    width: 180px;}
+
+
+.table_wrapper {
+        float: left;
+    margin-left: 5px;
+    width: 350px;}
+
+.prod_menu {    padding-left: 5px;
+    position: relative;
+    top: 16px;}
+
+ .form_class {
+ float: left;
+    width: 700px;
+    margin-top: 20px;
+ }
+
+.prod_info {
+ margin-top:15px;
+  float: left;
+    width: 700px;
+ }
+
+ .review_link {
+    width: 700px;
+    float: left;
+    margin-top: 20px;
+ }
+
+.comment_wrapper{
+     border-top: 1px solid #545354;
+    float: left;
+    font-size: 11px;
+    margin-top: 8px;
+    padding-top: 4px;
+    width: 700px;}
+
+    .commenthead b{
+    font-size: 12;
+    color: #078FB5;
+ }
+
+     .commenttime{
+float: right;
+ }
+	</style>
+</head>
+
+<body>
+	<div id="container-main">
+		<form class="formee" action="/market/search/" method="post"><input name="csrfmiddlewaretoken" value="WhSKKZDlwNCmGe2M5QAPChW3X5XTNphW" type="hidden">
+			<div class="fix grid-3-12">
+			    <a id="logo" href="http://4yjes6zfucnh7vcj.onion/">
+					<img id="logo_image" src="fredthebaker_2_files/logo.png">
+				</a>
+			</div>
+				<div class="top-nav fix3 grid-7-12">
+                <input id="search_field" name="text" type="text">
+				</div>
+				<div class="top-nav fix3 grid-2-12">
+				<input class="top-nav-button" name="submit" value="Go" type="submit">
+				</div>
+</form>
+				<div class="top-nav fix1 grid-3-12">
+				</div>
+<div class="fix1 grid-9-12">
+  <ul id="Navigation">
+    <li><a href="http://4yjes6zfucnh7vcj.onion/orders/cart" class="nav_link">Shopping Cart <span class="footnote">(0)</span></a>&nbsp;|&nbsp;</li>
+    <li><a href="http://4yjes6zfucnh7vcj.onion/messages/" class="nav_link">Messages <span class="footnote">(0)</span></a>&nbsp;|&nbsp;</li>
+    <li><a href="http://4yjes6zfucnh7vcj.onion/orders" class="nav_link">Orders <span class="footnote">(0)</span></a>&nbsp;|&nbsp;</li>
+    <li><a href="http://4yjes6zfucnh7vcj.onion/account" class="nav_link">Account <span class="footnote">(฿0.0000)</span></a>
+						
+							
+						</li>
+                            <li><div class="footnote" style="float: right; margin-right: 35px; width: 300px; display: inline;">Logged in as <b> FleshSuperman </b>&nbsp;&nbsp;<a href="http://4yjes6zfucnh7vcj.onion/accounts/logout" class="nav_link">Logout </a></div></li>
+  </ul>
+  </div>
+			
+
+
+
+
+	
+
+				<div class="grid-3-12" style="margin-right: 0 !important">
+					<div id="main_menu">
+                        
+                        
+                        <ul id="root">
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                    
+                                    <strong><a href="http://4yjes6zfucnh7vcj.onion/category/1">Drugs</a></strong>
+                                    <span class="footnote"> 2303 </span>
+                                    
+                                    
+                                            
+                                                <ul class="children">
+                                                    
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/83">Cannabis</a>
+                                    <span class="footnote"> 579 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/96">Dissociatives</a>
+                                    <span class="footnote"> 53 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/107">Ecstasy</a>
+                                    <span class="footnote"> 325 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/120">Opioids</a>
+                                    <span class="footnote"> 83 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/77">Prescription</a>
+                                    <span class="footnote"> 253 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/43">Psychedelics</a>
+                                    <span class="footnote"> 467 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/63">Steroids/PEDs</a>
+                                    <span class="footnote"> 245 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                    
+                                    <a href="http://4yjes6zfucnh7vcj.onion/category/16">Stimulants</a>
+                                    <span class="footnote"> 298 </span>
+                                    
+                                    
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                                </ul>
+                                            
+                                    
+                                    
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                                <li>
+                                </li>
+                            
+                        </ul>
+					</div>  
+			</div> 
+		</div>
+	    
+
+		<div class="content grid-8-12">
+                   
+
+
+
+    <div class="viewusercont">
+            <div>
+            <a href="http://4yjes6zfucnh7vcj.onion/market/reviews/fredthebaker">
+            </a>
+        </div>
+        <h3>fredthebaker</h3>
+        <a href="http://4yjes6zfucnh7vcj.onion/messages/send_message/fredthebaker">message</a>
+        <div class="nav_link_divider" style="float: none; display: inline-block; position: relative; top: 3px"></div>
+        
+            <a href="http://4yjes6zfucnh7vcj.onion/add_fav/user/fredthebaker" title="a link to this profile will appear on your homepage">become fan</a>
+        
+        <a href="http://4yjes6zfucnh7vcj.onion/market/discussion/user/fredthebaker">discuss</a>
+        <span class="footnote"> 0</span>
+        <a href="http://4yjes6zfucnh7vcj.onion/market/flag/user/fredthebaker">report</a>
+        
+    </div>
+    <div class="viewusercont">
+        <table class="msgtable">
+            <tbody>
+                <tr>
+                    <th>Vendor stats:</th>
+                    <th> </th>
+                </tr>
+                <tr>
+                    <td>vendor for</td>
+                    <td>5&nbsp;years, 10&nbsp;months</td>
+                </tr>
+                <tr>
+                    <td>last seen</td>
+                    <td>1&nbsp;day, 23&nbsp;hours</td>
+                </tr>
+                <tr>
+                    <td>avg rating</td>
+                    <td>4.77 / 5.0</td>
+                </tr>
+                <tr>
+                    <td>transactions</td>
+                    <td>523</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+        <div class="container container_large" style="margin: 20px 0 40px;">
+            
+            
+<p></p>
+<p>***** NEW RULES - WE REQUIRE EVERYONE TO FINALIZE EARLY *****</p>
+<p>*****ONLY DOING THIS UNTIL THE BITCOIN STABILIZES *****</p>
+<p>Please send your address in the proper format and always include the country - </p>
+<p>NAME
+<br>STREET
+<br>CITY
+<br>POSTCODE
+<br>COUNTRY
+<br>.
+<br>.
+<br>.
+<br>FAQ - PLEASE READ THIS BEFORE YOU SEND US A MESSAGE.</p>
+<p>Q where is my order
+<br>A making its way through the postal system.</p>
+<p>Q why has my order not arrived.
+<br>A making its way through the postal system.</p>
+<p>Q can you give me an update on my order
+<br>A making its way through the postal system.</p>
+<p>Q can my order be tracked
+<br>A No</p>
+<p>Q what days do you ship from Germany
+<br>A we will never tell you, stop asking.</p>
+<p>Q how long does it take to arrive in xxxx country.
+<br>A we do not know the exact time.
+<br>.</p>
+<p>WE SHIP PRODUCTS FROM GERMANY AND THE NETHERLANDS
+<br>.
+<br>.
+<br>*****BY ORDERING YOU AGREE TO OUR TERMS*****
+<br>.
+<br>.
+<br>ALL ADDRESSES ARE PRINTED WITH RETURN ADDRESS</p>
+<p>.
+<br>.</p>
+<p>PRODUCTS AVAILABLE -
+<br>.
+<br>.
+<br>COCAINE
+<br>SPEED PASTE
+<br>MDMA</p>
+<p>.
+<br>.
+<br>All items from the Netherlands and Germany are sent First Class Post.
+<br>There is no signature required.
+<br>.
+<br>Don't want your item shipped from the Netherlands ?
+<br>.
+<br>Due to demand we are now shipping parcels twice a week from Germany.
+<br>.
+<br>If you want this service make sure you select Germany from the postage options.
+<br>.
+<br>For security reasons we can not tell you what days we ship, but we change it every week.
+<br>.
+<br>All items from the Netherlands and Germany are packed with mylar sniff proof material for you safety.
+<br>.
+<br>Looking for Bulk ? Let us know and we will do out best to accommodate you.
+<br>.
+<br>.
+<br>-------------------------------------
+<br>.
+<br>.
+<br>WE USE THE BEST POSSIBLE STEALTH ON EVERY ORDER TO MAKE SURE YOU PRODUCT ARRIVES TO YOU AS SAFELY AS POSSIBLE
+<br>.
+<br>IF YOU HAVE ANY QUESTIONS PLEASE SEND US A MESSAGE</p>
+
+            
+            <p>-----BEGIN PGP PUBLIC KEY BLOCK-----<br>Version: GnuPG v1.4.12 (MingW32)</p>
+
+<p>mQENBFJDVeABCADTJKC+DD1961PSeWAOmnAYP8flyop0xJyowHzMUrFlW9XfJPSF<br>6oOKeoml9XBnInIkME4Ketc6adEtPNhA+l25Ubpc1ZETbljUJSL/fOpenNYVq8ul<br>yeFkq5jrvOdM4E6+CBn6wrx2ONKwwLw+ULck4hPttAAAWV5lUzMcuUUTDptig3nI<br>fQIi9mdzLK4h6XMamLc4A813qZpOC2FDwEYPhoXiKCw1P9ZZwVeCxFTu6wzlvve4<br>oadKes5R8dNpkw/5yUyFtGAqqrkjKJvHG1PMGuRqNgwb2N5VDLExK3AAWNo6KHOB<br>V6vrtTmf0yhWfipLQsKG0NR5Bi7If3628sDPABEBAAG0F215a2V5IDxub21haWxA<br>bGFsYS5jb20+iQE4BBMBAgAiBQJSQ1XgAhsDBgsJCAcDAgYVCAIJCgsEFgIDAQIe<br>AQIXgAAKCRDW1PLUSxPuA+kUB/wK4ItE0M4NZx5dRubbjc85wsR6Qg7Xm2IUyW5P<br>+0HkSCuPhrzxqYkBc/tjOWFfa7LAkQsVgMJ9pcASI6iQW3j3dzhj0dho0fGFHvLA<br>fMonWyr/b/gbnSAXMfZfuzeLu52eOJqaQTubokiHD6rU6zbMUO42MnVrlnLo6Dag<br>ON9sC9qjKercUeJZccUvru8OD6AbNhnxCFyl1RjWBCE7smiGCvwTPvYO1ZMTQF5Q<br>irhGoJZ3hvJWJnpW6E0ZXnq1bFE0XjZpSKXWspnV5lJM3cCdl80sNgCdeC17zF1i<br>c5SOPvZ2p8CNQgB7/UuzC6rZMhXIx3sEdV1zQXnbum3EajiVuQENBFJDVeABCACs<br>T3aAzxn6HYUa4f5+Q4J1QF8fD3AaQxcGRdXcsiGeICNqRRv2gphn6wMzZ2KJC2dO<br>fWhfuTZjKLFG52RYjoA9iq3HzcFxffsgffXaTsX0rLYOviGB+TRllZ6bqdRZ5nw6<br>WC0BZKJCPUiGCWZM8bbJm2ACilUe2LZrimPCYFbepRdySEjnYuMyxq1R5/byE/Nh<br>tOMN/ZPNSQkjD216QON1EIyp1IfgL+H/tvAprH2Sjw/8NhkMH2ytLnmVQdV4y6sD<br>DaQSPoxSVpK1pRCbL/YZ+QgIEWOxkY8vIBpMqFOJuK9La6o9zlIVWhiBtO33O/O7<br>r8KrLc4UtxkvIm/ReQETABEBAAGJAR8EGAECAAkFAlJDVeACGwwACgkQ1tTy1EsT<br>7gOfnggAoL3H9JBSEpFzJnVGW+do8Ru0zWwMJ3Y0urHxzQfndJqPR3UibeS5yZuo<br>VWjf2I+jqdiGXjxs3w7iiLKoS30i4uS/e+IXYhMFkX0jRyM323gz+SBFGoChCRpD<br>U6+2RrEZ140rj/e06fsGpk4FwEOndYFROpe+dNWmBClgZiwXiEcsrDtL4zzVuqw0<br>LCVreO4umyN5PwEsGztAl48D9+dSGpiLvPfJm/GUtqXIm6NXKp0x9jvBYVkCq9s6<br>SMMe5wcsQDm2UVOodV55drzJhiVqRZnXIEzqvSlBcefvrFrpEOhlaGRXCVBS974F<br>Ea2RcRrLKuWR13WgN7Z76wrl65ayKA==<br>=Tz/a<br>-----END PGP PUBLIC KEY BLOCK-----</p>
+        </div>
+
+        
+            <table class="msgtable">
+                <tbody>
+                    <tr>
+                        <th>category</th><th>title</th><th>price</th><th>ship to</th><th>ship from</th><th>&nbsp;</th>
+                    </tr>
+                    
+                        <tr>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/category/26">Cocaine</a></td>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/market/item/5g_of_pure_uncut_peruvian_cocaine">5G of PURE UNCUT PERUVIAN COCAINE</a></td>
+                            
+                                
+                                    <td>
+                                        
+                                            
+                                                ฿0.0281
+                                            
+                                        
+                                    </td>
+
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                            <td>Worldwide</td>
+                            <td>Germany</td>
+                            
+                                
+                                    <td><a href="http://4yjes6zfucnh7vcj.onion/add_basket/2580">add to cart</a></td>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+
+                        </tr>
+                    
+                        <tr>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/category/26">Cocaine</a></td>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/market/item/1g_of_pure_uncut_peruvian_cocaine">1G of PURE UNCUT PERUVIAN COCAINE</a></td>
+                            
+                                
+                            
+                                
+                                    <td>
+                                        
+                                            
+                                                ฿0.0060
+                                            
+                                        
+                                    </td>
+
+                                
+                            
+                                
+                            
+                                
+                            
+                            <td>Worldwide</td>
+                            <td>Germany</td>
+                            
+                                
+                            
+                                
+                                    <td><a href="http://4yjes6zfucnh7vcj.onion/add_basket/2160">add to cart</a></td>
+                                
+                            
+                                
+                            
+                                
+                            
+
+                        </tr>
+                    
+                        <tr>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/category/26">Cocaine</a></td>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/market/item/3_5g_of_pure_uncut_peruvian_cocaine">3.5G of PURE UNCUT PERUVIAN COCAINE</a></td>
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <td>
+                                        
+                                            
+                                                ฿0.0196
+                                            
+                                        
+                                    </td>
+
+                                
+                            
+                                
+                            
+                            <td>Worldwide</td>
+                            <td>Germany</td>
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <td><a href="http://4yjes6zfucnh7vcj.onion/add_basket/2369">add to cart</a></td>
+                                
+                            
+                                
+                            
+
+                        </tr>
+                    
+                        <tr>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/category/119">MDMA</a></td>
+                            <td><a href="http://4yjes6zfucnh7vcj.onion/market/item/1g_beautiful_mdma_80">1g  Beautiful MDMA 80%+</a></td>
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <td>
+                                        
+                                            
+                                                ฿0.0022
+                                            
+                                        
+                                    </td>
+
+                                
+                            
+                            <td>Worldwide</td>
+                            <td>Germany</td>
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <td><a href="http://4yjes6zfucnh7vcj.onion/add_basket/3070">add to cart</a></td>
+                                
+                            
+
+                        </tr>
+                    
+                    
+
+                </tbody>
+            </table>
+        
+        <br>
+        <br>
+        <span class="h3">Reviews:</span>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="http://4yjes6zfucnh7vcj.onion/market/reviews/fredthebaker/">Click here</a>
+        for more
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         1&nbsp;week
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Arrived OK despite FE. (I don't expect any FE'd package to arrive) good stealth, smells amazing, can't wait to sample it!</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         1&nbsp;week
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Nice one! think one of the best on SR2.0... still testing</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         1&nbsp;week
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Great seller. First time doing business and the 
+best service so far on SR. Excellent stelth, product and delivery was 
+very fast. Will order again.</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         1&nbsp;week, 2&nbsp;days
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>FE waiting for the product, ordered tuesday night. expect today or monday</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         1&nbsp;week, 3&nbsp;days
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Very nice gear and the stealth also excellent. I 
+really appreciate the postage options. Great service overall, highly 
+recommended.</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         1&nbsp;week, 4&nbsp;days
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Just in time. Scale happy, test kit happy, i´m happy.</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         2&nbsp;weeks
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Quality = good, packaging = good, delivery time = 6 days :)</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                    ☆
+            
+        </b>
+        <span class="commenttime">
+         2&nbsp;weeks
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>Delivery 9days, Product not bad either. Not sure its uncut but had worse</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         2&nbsp;weeks, 1&nbsp;day
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>FE for New Rules - Fred the Best for Me - Thanks again :-)</p>
+        </div>
+        
+     <div class="comment_wrapper">
+        <div class="commenthead">
+        <b>
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        
+            
+                        ★
+            
+        </b>
+        <span class="commenttime">
+         2&nbsp;weeks, 1&nbsp;day
+       </span>
+        </div>
+                    <span class="footnote">
+                    </span>
+                    <p>FE for pretty much one of the very very few who deserves that. Frank you´re my man!</p>
+        </div>
+        
+        <div class="paginator">
+        
+            
+                
+                    
+                    
+                        
+                            <a href="http://4yjes6zfucnh7vcj.onion/market/user/fredthebaker/1/1">&lt;</a>
+                        
+                    
+                    
+                        
+                            <a href="http://4yjes6zfucnh7vcj.onion/market/user/fredthebaker/1/1">1</a>
+                        
+                    
+                    <span class="current">
+                        <strong>2</strong>
+                    </span>
+                    
+                        <a href="http://4yjes6zfucnh7vcj.onion/market/user/fredthebaker/3/1">3</a>
+                    
+                        <a href="http://4yjes6zfucnh7vcj.onion/market/user/fredthebaker/4/1">4</a>
+                    
+
+                    
+
+                    
+                        
+                            <a href="http://4yjes6zfucnh7vcj.onion/market/user/fredthebaker/53/1">&nbsp;Last ›</a>
+                        
+                    
+                
+            
+        
+            </div>
+    </div>
+
+
+
+
+
+		</div>
+		<div class="fix grid-12-12">
+		
+
+    
+		</div>
+
+				
+</body></html>
