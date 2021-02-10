@@ -3,31 +3,15 @@ This scraper scrapes multiple marketplaces for different products and vendors an
 
 ## Getting started
 
-- Clone / download this github
-- Use python + virtual environments (optional)
-- install the following packages \
-You can also use the `requirements.txt` file to install all packages into your conda env
-    - bs4
-    - importlib
-    - pycountry
-    - requests
-    - zipfile
-    - plotly
-    - dash
-    - pandas
-    - numpy
-    
-**How to do:**
-- open terminal
-- cd to the right folder, where the requirement.txt file is
-- Exit the current venv (if you are using one)
-    - `$ conda deactivate`
-- Create a new one
-    - `$ conda create -n name_environment`
-- Activate venv
-    - `$ conda activate name_environment`
-- Install packages requirements.txt
-    - `(name_environment)$ pip install -r requirements.txt`
+```
+git clone https://github.com/danieldp92/ANITA-Trend_Analysis_Tool.git
+
+cd Trend_Analysis_Tool
+virtualenv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+```
 
     
  
